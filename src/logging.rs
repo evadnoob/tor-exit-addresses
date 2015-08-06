@@ -1,5 +1,5 @@
 extern crate log;
-extern crate env_logger;
+
 extern crate time;
 
 use log::{set_logger, LogRecord, LogLevel, LogMetadata, SetLoggerError, LogLevelFilter};
