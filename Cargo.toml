@@ -5,12 +5,13 @@ authors = ["David Boon <david.boon@gmail.com>"]
 
 
 [dependencies]
-rustc-serialize = "*"
-time = "*"
+rustc-serialize = "0.3.15"
+time = "0.1.32"
 log = "0.3.1"
 env_logger = "0.3.1"
 hyper = "0.5.0"
 regex = "0.1.8"
 iron = "0.1.20"
 router = "0.0.10"
-persistent = "*"
+persistent = "0.0.6"
+docopt = "0.6.70"

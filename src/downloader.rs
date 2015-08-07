@@ -51,7 +51,7 @@ pub fn start(lock: Arc<RwLock<Stuff>>) {
                         trace!("{}", line);
 
                         let captures = re.captures(line).unwrap();
-                        println!("{}", captures.at(1).unwrap());
+                        //println!("{}", captures.at(1).unwrap());
                         writer.buffer.push(captures.at(1).unwrap().to_string());
                     }
                 }
