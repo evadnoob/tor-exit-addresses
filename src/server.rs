@@ -17,6 +17,12 @@ impl Key for HitCounter { type Value = usize; }
 pub fn start(lock: Arc<RwLock<downloader::Stuff>>, port: u16) {
 
     let mut router = Router::new();  
+
+    router.get("/healthcheck", move |req: &mut Request| {
+       Ok(Response::with(status::Ok))
+    }); 
+
+    
     router.get("/", move |req: &mut Request| {
         info!(" / requesting lock");
 
