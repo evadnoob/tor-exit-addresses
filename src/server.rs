@@ -18,7 +18,7 @@ pub fn start(lock: Arc<RwLock<downloader::Stuff>>, port: u16) {
 
     let mut router = Router::new();  
 
-    router.get("/healthcheck", move |req: &mut Request| {
+    router.get("/ping", move |req: &mut Request| {
        Ok(Response::with(status::Ok))
     }); 
 
