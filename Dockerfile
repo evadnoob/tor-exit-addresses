@@ -27,5 +27,5 @@ RUN apt-get update && \
 ADD . /opt/source
 WORKDIR /opt/source
 RUN cargo build --release 
-CMD ["/opt/source/target/release/get-tor-exit-addresses"]
+CMD ["/opt/source/target/release/get-tor-exit-addresses", "--port=9757"]
 
